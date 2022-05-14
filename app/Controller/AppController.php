@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Application level Controller
  *
@@ -30,6 +31,7 @@ App::uses('Controller', 'Controller');
  * @package		app.Controller
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
-class AppController extends Controller {
-    public $components = array('DebugKit.Toolbar'=>array('panels'=>array('log'=>false,'variables'=>false),'history'=>10));
+class AppController extends Controller
+{
+    public $components = array('DebugKit.Toolbar');
 }
