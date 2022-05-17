@@ -1,7 +1,7 @@
 <?php
 class MeserosController extends AppController
 {
-    public $helpers = array('Html', 'Form');
+    public $helpers = array('Html', 'Form', 'Time');
     public $components = array('Session');
 
     public function index()
@@ -41,7 +41,7 @@ class MeserosController extends AppController
         if (!$mesero) {
             throw new NotFoundException('El mesero no ha sido encontrado');
         }
-        if ($this->request->is('post','put')) {
+        if ($this->request->is('post', 'put')) {
             $this->Mesero->id = $id;
             if ($this->Mesero->save($this->request->data)) {
                 $this->Session->setFlash('El mesero ha sido modificado', $elements = 'default', $params = array('class' => 'success'));
@@ -51,6 +51,16 @@ class MeserosController extends AppController
         }
         if (!$this->request->data) {
             $this->request->data = $mesero;
+        }
+    }
+    public function delete($id = null)
+    {
+        if ($this->request->is('get')) {
+            throw new NotFoundException('Incorrecto');
+        }
+        if ($this->Mesero->delete($id)) {
+            $this->Session->setFlash('El mesero ha sido eliminado correctamente.', $element = 'default', $params = array('class' => 'success'));
+            return $this->redirect(array('action' => 'index'));
         }
     }
 }

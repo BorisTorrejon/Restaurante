@@ -204,3 +204,21 @@ Stack Trace:
 #3 C:\wamp64\www\proyectos\Restaurante\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MeserosController), Object(CakeRequest))
 #4 C:\wamp64\www\proyectos\Restaurante\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2022-05-15 01:51:47 Error: [NotFoundException] Incorrecto
+Request URL: /proyectos/Restaurante/meseros/delete
+Stack Trace:
+#0 [internal function]: MeserosController->delete()
+#1 C:\wamp64\www\proyectos\Restaurante\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MeserosController), Array)
+#2 C:\wamp64\www\proyectos\Restaurante\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp64\www\proyectos\Restaurante\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MeserosController), Object(CakeRequest))
+#4 C:\wamp64\www\proyectos\Restaurante\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-05-15 01:57:35 Error: [NotFoundException] Incorrecto
+Request URL: /proyectos/Restaurante/meseros/delete/8
+Stack Trace:
+#0 [internal function]: MeserosController->delete('8')
+#1 C:\wamp64\www\proyectos\Restaurante\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MeserosController), Array)
+#2 C:\wamp64\www\proyectos\Restaurante\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp64\www\proyectos\Restaurante\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MeserosController), Object(CakeRequest))
+#4 C:\wamp64\www\proyectos\Restaurante\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

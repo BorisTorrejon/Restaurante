@@ -35,6 +35,16 @@
                         $mesero['Mesero']['id']
                     )
                 ); ?>
+            <?php echo $this->Form->postLink(
+                    'Eliminar',
+                    array(
+                        'action' => 'delete',
+                        $mesero['Mesero']['id']
+                    ),
+                    array(
+                        'confirm' => 'Eliminar a ' . $mesero['Mesero']['name'] . '?'
+                    )
+                ); ?>
         </td>
     </tr>
     <?php endforeach; ?>
