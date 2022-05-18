@@ -222,3 +222,50 @@ Stack Trace:
 #3 C:\wamp64\www\proyectos\Restaurante\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MeserosController), Object(CakeRequest))
 #4 C:\wamp64\www\proyectos\Restaurante\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2022-05-17 18:28:00 Error: [MissingControllerException] Controller class ProyectosController could not be found.
+Exception Attributes: array (
+  'class' => 'ProyectosController',
+  'plugin' => NULL,
+)
+Request URL: /proyectos/Restaurante/proyectos/restaurante/
+Stack Trace:
+#0 C:\wamp64\www\proyectos\Restaurante\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-05-17 23:13:23 Error: [MissingActionException] Action MesasController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'MesasController',
+  'action' => 'edit',
+)
+Request URL: /proyectos/Restaurante/mesas/edit/1
+Stack Trace:
+#0 C:\wamp64\www\proyectos\Restaurante\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp64\www\proyectos\Restaurante\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MesasController), Object(CakeRequest))
+#2 C:\wamp64\www\proyectos\Restaurante\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-05-17 23:42:15 Error: [NotFoundException] La mesa no ha sido encontrado
+Request URL: /proyectos/Restaurante/mesas/edit/
+Stack Trace:
+#0 [internal function]: MesasController->edit()
+#1 C:\wamp64\www\proyectos\Restaurante\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MesasController), Array)
+#2 C:\wamp64\www\proyectos\Restaurante\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp64\www\proyectos\Restaurante\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MesasController), Object(CakeRequest))
+#4 C:\wamp64\www\proyectos\Restaurante\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-05-17 23:45:57 Error: [NotFoundException] Datos invalidos
+Request URL: /proyectos/Restaurante/mesas/edit/
+Stack Trace:
+#0 [internal function]: MesasController->edit()
+#1 C:\wamp64\www\proyectos\Restaurante\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MesasController), Array)
+#2 C:\wamp64\www\proyectos\Restaurante\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp64\www\proyectos\Restaurante\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MesasController), Object(CakeRequest))
+#4 C:\wamp64\www\proyectos\Restaurante\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-05-17 23:46:01 Error: [NotFoundException] La mesa no ha sido encontrado
+Request URL: /proyectos/Restaurante/mesas/edit/23
+Stack Trace:
+#0 [internal function]: MesasController->edit('23')
+#1 C:\wamp64\www\proyectos\Restaurante\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MesasController), Array)
+#2 C:\wamp64\www\proyectos\Restaurante\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp64\www\proyectos\Restaurante\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MesasController), Object(CakeRequest))
+#4 C:\wamp64\www\proyectos\Restaurante\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

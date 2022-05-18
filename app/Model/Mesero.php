@@ -1,6 +1,9 @@
 <?php
 class Mesero extends AppModel
 {
+    public $virtualFields = array(
+        'fullName' => 'CONCAT(Mesero.surname," ",Mesero.name)'
+    );
     public $validate = array(
         'dni' => array(
             'notEmpty' => array(
@@ -33,11 +36,11 @@ class Mesero extends AppModel
     );
     public $hasMany = array(
         'Mesa' => array(
-            'className'=> 'Mesa',
+            'className' => 'Mesa',
             'foreignKey' => 'Mesero_id',
             'conditions' => '',
             'orden' => 'Mesa.serie DESC',
             'depend' => false
-        )    
+        )
     );
 }
