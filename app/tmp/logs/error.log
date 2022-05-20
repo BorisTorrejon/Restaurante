@@ -269,3 +269,12 @@ Stack Trace:
 #3 C:\wamp64\www\proyectos\Restaurante\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MesasController), Object(CakeRequest))
 #4 C:\wamp64\www\proyectos\Restaurante\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2022-05-20 10:51:16 Error: [MissingControllerException] Controller class ProyectosController could not be found.
+Exception Attributes: array (
+  'class' => 'ProyectosController',
+  'plugin' => NULL,
+)
+Request URL: /proyectos/Restaurante/proyectos/restaurante/
+Stack Trace:
+#0 C:\wamp64\www\proyectos\Restaurante\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

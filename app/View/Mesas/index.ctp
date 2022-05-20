@@ -55,6 +55,3 @@
         <?php endforeach; ?>
     </tbody>
 </table>
-<pre>
-    <?php print_r($mesas[0]) ?>
-</pre>
